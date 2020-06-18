@@ -6,11 +6,13 @@ import ContactUs from './components/ContactUs/ContactUs';
 import Location from './components/Location/Location';
 import Ammenities from './components/Ammenities/Ammenities';
 import Footer from './components/Footer/Footer';
+import Home from './components/Home/Home';
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <Home />
       <Apartments />
       <Ammenities />
       <Location />
