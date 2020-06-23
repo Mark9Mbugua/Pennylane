@@ -1,20 +1,23 @@
 import React from 'react';
 import oneBedroom from '../../images/1bdsitting.jpg';
 import twoBedroom from '../../images/2bdexterior.jpg';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import { 
     ApartmentsContainer,
     ApartmentsSection,
     FeaturedApartment,
     FeaturedImg,
-    SectionTitle,
-    TitleContainer,
-    Line,
     Info,
     ImgContainer,
     PriceTop,
     PriceTitle
  } from './apartments.styles';
+
+ import {
+    Line,
+    SectionTitle,
+    TitleContainer
+ } from '../Common/common.styles';
 
 const Apartments = () => {
     return (
