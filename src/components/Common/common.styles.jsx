@@ -4,7 +4,7 @@ export const TitleContainer = styled.div`
     display: grid;
     align-items: center;
     justify-items: center;
-    padding: 10px 0 0 0;
+    padding: 40px 0 0 0;
 `;
 
 export const SectionTitle = styled.h1`   
@@ -18,7 +18,7 @@ export const Line = styled.div`
     background: #74706D;
     width: 20vh;
     height: 5px;
-    margin: 5px;
+    margin-top: -2%;
     align-self: center;
     justify-self: center;
 `;
