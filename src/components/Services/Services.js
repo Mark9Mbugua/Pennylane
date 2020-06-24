@@ -50,7 +50,7 @@ const Services = () => {
     ]);
 
     return (
-        <ApartmentsSection>
+        <ApartmentsSection id='services'>
             <TitleContainer>
                 <SectionTitle>Services</SectionTitle>
                 <Line />

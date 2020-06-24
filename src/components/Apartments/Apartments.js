@@ -10,7 +10,8 @@ import {
     Info,
     ImgContainer,
     PriceTop,
-    PriceTitle
+    PriceTitle,
+    HouseLink
  } from './apartments.styles';
 
  import {
@@ -21,39 +22,42 @@ import {
 
 const Apartments = () => {
     return (
-        <ApartmentsSection>
+        <ApartmentsSection id='apartments'>
             <TitleContainer>
                 <SectionTitle>Apartments</SectionTitle>
                 <Line />
             </TitleContainer>
             <ApartmentsContainer>
                 <FeaturedApartment>
-                    <ImgContainer>
+                    <ImgContainer className='img-container'>
                         <FeaturedImg src={oneBedroom} alt='One Bedroom' />
                         <PriceTop>
                             <PriceTitle>Ksh 20,000</PriceTitle>
                             <p>per month</p>
                         </PriceTop>
+                        <HouseLink className='house-link' to={`/apartment`}>Features</HouseLink>
                     </ImgContainer>
                     <Info>One bedroom</Info>
                 </FeaturedApartment>
                 <FeaturedApartment>
-                    <ImgContainer>  
+                    <ImgContainer className='img-container'>  
                         <FeaturedImg src={twoBedroom} alt='Two Bedroom' />
                         <PriceTop>
                             <PriceTitle>Ksh 35,000</PriceTitle>
                             <p>per month</p>
                         </PriceTop>
+                        <HouseLink className='house-link' to={`/apartment`}>Features</HouseLink>
                     </ImgContainer>
                     <Info>Two bedroom Penthouse</Info>
                 </FeaturedApartment>
                 <FeaturedApartment>
-                    <ImgContainer>
+                    <ImgContainer className='img-container'>
                         <FeaturedImg src={oneBedroom} alt='Three Bedroom' />
                         <PriceTop>
                             <PriceTitle>Ksh 30,000</PriceTitle>
                             <p>per month</p>
                         </PriceTop>
+                        <HouseLink className='house-link' to={`/apartment`}>Features</HouseLink>
                     </ImgContainer>
                     <Info>Three bedroom</Info>
                 </FeaturedApartment>

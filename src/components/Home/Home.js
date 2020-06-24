@@ -8,7 +8,7 @@ WhiteLine
 
 const Home = () => {
     return (
-        <HomeSection>
+        <HomeSection id='home'>
             <Intro>
                 <IntroTitle>
                     Move into your ideal home

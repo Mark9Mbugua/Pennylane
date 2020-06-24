@@ -16,7 +16,7 @@ import {
 
 const Location = () => {
     return (
-        <ApartmentsSection>
+        <ApartmentsSection id='location'>
             <TitleContainer>
                 <SectionTitle>Location</SectionTitle>
                 <Line />

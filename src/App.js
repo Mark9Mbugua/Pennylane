@@ -1,22 +1,20 @@
 import React from 'react';
 import './App.css';
+import { Route, Switch } from "react-router-dom";
 import Header from './components/Header/Header';
-import Apartments from './components/Apartments/Apartments';
-import ContactUs from './components/ContactUs/ContactUs';
-import Location from './components/Location/Location';
-import Services from './components/Services/Services';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
+import Main from './pages/Main';
+import SingleApartment from './pages/SingleApartment';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Home />
-      <Apartments />
-      <Services />
-      <Location />
-      <ContactUs />
+      <Switch>
+        <Route exact path='/' component={Main} />
+        <Route exact path='/apartment' component={SingleApartment} />
+      </Switch>
       <Footer />
     </div>
   );

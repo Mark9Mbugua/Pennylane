@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const ApartmentsSection = styled.section`
     min-height: 75vh;
@@ -23,6 +24,9 @@ export const FeaturedApartment = styled.div`
     transition: all 0.3s linear;
     &:hover {
         box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);;
+    }
+    .img-container:hover .house-link {
+        transform: translate(-50%, -50%) scale(1);
     }
 `;
 
@@ -73,3 +77,26 @@ export const PriceTitle = styled.h6`
     font-weight: 300;
     letter-spacing: 3px;
 `;
+
+export const HouseLink = styled(Link)`
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(0);
+    transition: all 0.3s linear;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #222;
+    background: #af9a7d;;
+    padding: 0.4rem 0.9rem;
+    border: 3px solid #af9a7d;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+    &:hover {
+        background: transparent;
+        color: #ececec;
+    }
+`;
+
