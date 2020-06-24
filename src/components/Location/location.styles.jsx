@@ -3,7 +3,7 @@ import { ApartmentsContainer } from '../Apartments/apartments.styles';
 
 export const LocationContainer = styled(ApartmentsContainer)`
     grid-template-columns: 1fr;
-    padding: 30px 20px;
+    padding: 30px 20px 100px;
 `;
 
 export const MapRouter = styled.div`
