@@ -1,10 +1,16 @@
 import React from 'react';
+import { 
+    FooterSection,
+    FooterInfo
+ } from './footer.styles';
 
 const Footer = () => {
     return (
-        <div>
-            Footer Section
-        </div>
+        <FooterSection>
+            <FooterInfo>
+              &copy;{new Date().getFullYear()} Powered by Staxx
+            </FooterInfo>
+        </FooterSection>
     )
 }
 
