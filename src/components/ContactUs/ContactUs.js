@@ -1,8 +1,4 @@
 import React from 'react';
-import { 
-    ApartmentsSection,
-    Info 
-} from '../Apartments/apartments.styles';
 import {
     Line,
     SectionTitle,
@@ -31,7 +27,7 @@ const ContactUs = () => {
                 <Phone>Call us on: +254712340908</Phone>
                 <Phone>Or</Phone>
                 <Phone>Email Us:</Phone>
-                <ContactsForm action="POST" data-netlify='true'>
+                <ContactsForm action='POST' data-netlify='true'>
                     <FormInput
                         type='text'
                         name='name'
@@ -50,6 +46,9 @@ const ContactUs = () => {
                         label='Message'
                         required
                     />
+                    <div className='field'>
+                        <div data-netlify-recaptcha='true'></div>
+                    </div>
                     <CustomButton type='submit'>Submit</CustomButton>
                 </ContactsForm>
             </ ContactsContainer>
