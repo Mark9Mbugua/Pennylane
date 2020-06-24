@@ -14,8 +14,6 @@ import FormInput from '../FormInput/FormInput';
 import TextArea from '../FormInput/TextArea';
 import CustomButton from '../CustomButton/CustomButton';
 
-
-
 const ContactUs = () => {
     return (
         <ContactsSection>
@@ -27,7 +25,8 @@ const ContactUs = () => {
                 <Phone>Call us on: +254712340908</Phone>
                 <Phone>Or</Phone>
                 <Phone>Email Us:</Phone>
-                <ContactsForm name='contact' method='post' netlify>
+                <ContactsForm name='contact-form' method='post'>
+                    <input type='hidden' name='form-name' value='contact' />
                     <FormInput
                         type='text'
                         name='name'
