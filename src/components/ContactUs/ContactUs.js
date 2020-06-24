@@ -16,7 +16,7 @@ import CustomButton from '../CustomButton/CustomButton';
 
 const ContactUs = () => {
     return (
-        <ContactsSection>
+        <ContactsSection id='contact-us'>
             <TitleContainer>
                 <SectionTitle>Contact Us</SectionTitle>
                 <Line />

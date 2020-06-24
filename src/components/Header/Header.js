@@ -3,7 +3,8 @@ import {
     Nav,
     Logo,
     NavLinks,
-    NavLink 
+    NavLink,
+    Home 
 } from './header.styles';
 
 const Header = () => {
@@ -13,21 +14,49 @@ const Header = () => {
                 <h4>Pennylane Apartments</h4>
             </Logo>
             <NavLinks>
-                <li>
-                    <NavLink  href='#'>Home</NavLink >
-                </li>
-                <li>
-                    <NavLink href='#'>Apartments</NavLink>
-                </li>
-                <li>
-                    <NavLink href='#'>Ammenities</NavLink>
-                </li>
-                <li>
-                    <NavLink href='#'>Location</NavLink>
-                </li>
-                <li>
-                    <NavLink href='#'>Contact Us</NavLink>
-                </li>
+                <Home to="/">
+                    Home
+                </Home>
+                <NavLink
+                    activeClass="active"
+                    to="apartments"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration= {700}
+                >
+                    Apartments
+                </NavLink>
+                <NavLink
+                    activeClass="active"
+                    to="services"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration= {700}
+                >
+                    Services
+                </NavLink>
+                <NavLink
+                    activeClass="active"
+                    to="location"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration= {700}
+                >
+                    Location
+                </NavLink>
+                <NavLink
+                    activeClass="active"
+                    to="contact-us"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration= {700}
+                >
+                    Contact Us
+                </NavLink>
             </NavLinks>
         </Nav>
     )
