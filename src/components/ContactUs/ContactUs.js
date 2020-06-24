@@ -27,8 +27,7 @@ const ContactUs = () => {
                 <Phone>Call us on: +254712340908</Phone>
                 <Phone>Or</Phone>
                 <Phone>Email Us:</Phone>
-                <ContactsForm name='contact' action='POST' netlify>
-                    <input type='hidden' name='form-name' value='contact' />
+                <ContactsForm name='contact' method='post' netlify>
                     <FormInput
                         type='text'
                         name='name'
