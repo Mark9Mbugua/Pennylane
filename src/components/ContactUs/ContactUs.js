@@ -27,7 +27,8 @@ const ContactUs = () => {
                 <Phone>Call us on: +254712340908</Phone>
                 <Phone>Or</Phone>
                 <Phone>Email Us:</Phone>
-                <ContactsForm action='POST' data-netlify='true'>
+                <ContactsForm name='contact' action='POST' netlify>
+                    <input type='hidden' name='form-name' value='contact' />
                     <FormInput
                         type='text'
                         name='name'
@@ -41,14 +42,10 @@ const ContactUs = () => {
                         required
                     />
                     <TextArea
-                        type='text'
                         name='message'
                         label='Message'
                         required
                     />
-                    <div className='field'>
-                        <div data-netlify-recaptcha='true'></div>
-                    </div>
                     <CustomButton type='submit'>Submit</CustomButton>
                 </ContactsForm>
             </ ContactsContainer>
