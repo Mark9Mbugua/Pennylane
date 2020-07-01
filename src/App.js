@@ -3,9 +3,10 @@ import './App.css';
 import { Route, Switch } from "react-router-dom";
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import Home from './components/Home/Home';
 import Main from './pages/Main';
-import SingleApartment from './pages/SingleApartment';
+import OneBedroom from './pages/OneBedroom';
+import TwoBedroom from './pages/TwoBedroom';
+import ThreeBedroom from './pages/ThreeBedroom';
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
       <Header />
       <Switch>
         <Route exact path='/' component={Main} />
-        <Route exact path='/apartment' component={SingleApartment} />
+        <Route exact path='/one-bedroom' component={OneBedroom} />
+        <Route exact path='/two-bedroom' component={TwoBedroom} />
+        <Route exact path='/three-bedroom' component={ThreeBedroom} />
       </Switch>
       <Footer />
     </div>
