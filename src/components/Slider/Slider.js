@@ -5,8 +5,7 @@ import {
     Left,
     Right, 
     SliderContainer,
-    Slide,
-    SliderImage
+    Slide
 } from './slider.styles';
 import { OneBedroomPhotos } from '../../data/OneBedroomData';
 
@@ -29,9 +28,9 @@ const ImageSlider = () => {
                 );
             })}
             <Left onClick={goLeft}><ChevronLeftIcon className='arrow'/></Left> 
-            <Right onClick={goRight}><ChevronRightIcon className='arrow'/></Right>   
+            <Right onClick={goRight}><ChevronRightIcon className='arrow'/></Right> 
         </SliderContainer>
-    )
+    );
 }
 
 export default ImageSlider

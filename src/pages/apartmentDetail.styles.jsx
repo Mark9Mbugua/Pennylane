@@ -43,3 +43,32 @@ export const CustomLink = styled(Link)`
         color: #ececec;
     }
 `;
+
+export const DetailsContainer = styled.div`
+    width: 80%;
+    min-height: 40vh;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    position: relative;
+    overflow: hidden; 
+    justify-self: center; 
+    justify-items: center; 
+`;
+
+export const Details = styled.div`
+    display: block;
+    padding: 10px;
+    h3 {
+        line-height: 2.5rem;
+        letter-spacing: 2.5px;
+    }
+    p {
+        letter-spacing: 1.5px;
+        line-height: 2rem;  
+    }
+`;
+
+export const Info = styled(Details)`
+    
+`;
