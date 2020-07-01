@@ -35,7 +35,7 @@ const Apartments = () => {
                             <PriceTitle>Ksh 20,000</PriceTitle>
                             <p>per month</p>
                         </PriceTop>
-                        <HouseLink className='house-link' to={`/apartment`}>Features</HouseLink>
+                        <HouseLink className='house-link' to={`/one-bedroom`}>Features</HouseLink>
                     </ImgContainer>
                     <Info>One bedroom</Info>
                 </FeaturedApartment>
@@ -46,7 +46,7 @@ const Apartments = () => {
                             <PriceTitle>Ksh 35,000</PriceTitle>
                             <p>per month</p>
                         </PriceTop>
-                        <HouseLink className='house-link' to={`/apartment`}>Features</HouseLink>
+                        <HouseLink className='house-link' to={`/two-bedroom`}>Features</HouseLink>
                     </ImgContainer>
                     <Info>Two bedroom Penthouse</Info>
                 </FeaturedApartment>
@@ -57,7 +57,7 @@ const Apartments = () => {
                             <PriceTitle>Ksh 30,000</PriceTitle>
                             <p>per month</p>
                         </PriceTop>
-                        <HouseLink className='house-link' to={`/apartment`}>Features</HouseLink>
+                        <HouseLink className='house-link' to={`/three-bedroom`}>Features</HouseLink>
                     </ImgContainer>
                     <Info>Three bedroom</Info>
                 </FeaturedApartment>
