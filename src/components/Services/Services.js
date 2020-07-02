@@ -3,7 +3,8 @@ import {
     ApartmentsSection,
     Info 
 } from '../Apartments/apartments.styles';
-import { 
+import {
+    ServicesSection, 
     ServicesContainer,
     ServiceItem,
     ServiceInfo

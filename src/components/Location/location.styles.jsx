@@ -4,6 +4,10 @@ import { ApartmentsContainer } from '../Apartments/apartments.styles';
 export const LocationContainer = styled(ApartmentsContainer)`
     grid-template-columns: 1fr;
     padding: 30px 20px 100px;
+
+    @media screen and (max-width: 768px) {
+        padding: 10px;
+    }
 `;
 
 export const MapRouter = styled.div`
