@@ -9,18 +9,18 @@ import {
 } from './slider.styles';
 import { OneBedroomPhotos } from '../../data/OneBedroomData';
 
-const ImageSlider = () => {
+const ImageSlider = ({images}) => {
     const [x, setX] = useState(0);
     const goLeft = () => {
-        x === 0 ? setX(-100 * (OneBedroomPhotos.length - 1)) : setX(x + 100);
+        x === 0 ? setX(-100 * (images.length - 1)) : setX(x + 100);
     };
     const goRight = () => {
-        x === -100 * (OneBedroomPhotos.length - 1) ? setX(0) : setX(x-100);
+        x === -100 * (images.length - 1) ? setX(0) : setX(x-100);
     }; 
 
     return (
         <SliderContainer>
-            {OneBedroomPhotos.map((item, index) => {
+            {images.map((item, index) => {
                 return (
                     <Slide key={index} style={{transform: `translate(${x}%)`}}>
                         {item}    

@@ -1,7 +1,7 @@
 import React from 'react';
 import { 
     ApartmentContainer,
-    OneBedroomHero,
+    ApartmentHero,
     CustomLink,
     Details,
     Info
@@ -9,16 +9,18 @@ import {
 import Banner from '../components/Banner/Banner';
 import Slider from '../components/Slider/Slider';
 import { DetailsContainer } from './apartmentDetail.styles';
+import { OneBedroomPhotos } from '../data/OneBedroomData';
+import oneBd from '../images/one-bd-kitchen-1.jpg'
 
 const OneBedroom = () => {
     return (
         <ApartmentContainer>
-            <OneBedroomHero>
+            <ApartmentHero coverImage={oneBd}>
                 <Banner title='One Bedroom Apartment'>
                     <CustomLink to={`/`}>Back Home</CustomLink> 
                 </Banner>
-            </OneBedroomHero>
-            <Slider />
+            </ApartmentHero>
+            <Slider images={OneBedroomPhotos}/>
             <DetailsContainer>
                 <Details>
                     <h3>Apartment Details</h3>
@@ -29,12 +31,13 @@ const OneBedroom = () => {
                 </Details>
                 <Info>
                     <h3>Info</h3>
-                    <p>Price: Ksh.20,000</p>
+                    <p>Rent: Ksh.20,000</p>
                     <p>Bedrooms: 1</p>
                     <p>Toilet: 1</p>
                     <p>Bathroom: 1</p>
                     <p>Store: 1</p>
                     <p>Tenancy requirements: Deposit + Rent = Ksh.40,000</p>
+                    <p>Balcony: 1</p>
                 </Info>
             </DetailsContainer>         
         </ApartmentContainer>
