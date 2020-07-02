@@ -8,7 +8,12 @@ export const SliderContainer = styled.div`
     align-items: center;
     position: relative;
     overflow: hidden; 
-    justify-self: center;  
+    justify-self: center;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        height: 70vh;
+    }  
 `;
 
 export const Slide = styled.div`
@@ -30,6 +35,10 @@ const CustomButton = styled.button`
 
     &:hover {
         background: rgba(0, 0, 0, 0.356);
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 10%;
     }
 `;
 

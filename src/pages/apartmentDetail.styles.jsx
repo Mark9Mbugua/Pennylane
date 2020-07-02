@@ -42,7 +42,11 @@ export const DetailsContainer = styled.div`
     position: relative;
     overflow: hidden; 
     justify-self: center; 
-    justify-items: center; 
+    justify-items: center;
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+    } 
 `;
 
 export const Details = styled.div`
