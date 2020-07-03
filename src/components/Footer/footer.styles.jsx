@@ -5,7 +5,7 @@ export const FooterSection = styled.section`
     margin: 140px 0 0;
     background: #74706D;
     display: grid;
-    grid-template-rows: 1fr 1fr;    
+    grid-template-rows: 1fr;    
 `;
 
 export const FooterInfo = styled.p`
