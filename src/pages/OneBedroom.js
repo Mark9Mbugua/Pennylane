@@ -10,7 +10,7 @@ import Banner from '../components/Banner/Banner';
 import Slider from '../components/Slider/Slider';
 import { DetailsContainer } from './apartmentDetail.styles';
 import { OneBedroomPhotos } from '../data/OneBedroomData';
-import oneBd from '../images/one-bd-kitchen-1.jpg'
+import oneBd from '../images/one-bd-kitchen-1.jpg';
 
 const OneBedroom = () => {
     return (

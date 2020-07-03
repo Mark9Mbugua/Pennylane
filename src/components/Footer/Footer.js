@@ -8,9 +8,6 @@ const Footer = () => {
     return (
         <FooterSection>
             <FooterInfo>
-                Powered by Staxx
-            </FooterInfo>
-            <FooterInfo>
               &copy;{new Date().getFullYear()} Pennylane. All Rights Reserved
             </FooterInfo>
         </FooterSection>

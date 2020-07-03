@@ -7,13 +7,26 @@ export const ServicesContainer = styled(ApartmentsContainer)`
     align-items: start;
     grid-gap: 25px;
     padding: 50px 20px;
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
 `;
 
 export const ServiceItem = styled.div`
     display: grid;
+    justify-items: center;
+    align-items: center;
     grid-gap: 15px;
     img {
         width: 80%;
+    }
+
+    @media screen and (max-width: 768px) {
+        img {
+            width: 60%;
+            height: 20vh;
+        }
     }
 `;
 
@@ -21,4 +34,8 @@ export const ServiceInfo = styled.p`
     padding: 0.5rem 0;
     text-align: center;
     letter-spacing: 2.5px;
+
+    @media screen and (max-width: 768px) {
+        letter-spacing: 2px;
+    }
 `;

@@ -1,65 +1,31 @@
-import React from 'react';
-import { 
-    Nav,
-    Logo,
-    NavLinks,
-    NavLink,
-    Home 
-} from './header.styles';
+import React, { useState, useEffect } from 'react';
+import DesktopNavbar from './DesktopNavbar';
 
 const Header = () => {
+    const [displayMobileNavbar, setDisplayMobileNavbar] = useState(false);
+    
+    useEffect(() => {
+        window.addEventListener('resize', checkAndAutoHideMobileNavbar);
+        return () => {
+            window.removeEventListener('resize', checkAndAutoHideMobileNavbar);   
+        }
+    }, []);
+
+    const checkAndAutoHideMobileNavbar = () => {
+        const screenWidth = window.innerWidth
+        if (displayMobileNavbar && screenWidth > 768) {
+            setDisplayMobileNavbar(false);
+        }
+    }
+
     return (
-        <Nav>
-            <Logo>
-                <h4>Pennylane Apartments</h4>
-            </Logo>
-            <NavLinks>
-                <Home to="/">
-                    Home
-                </Home>
-                <NavLink
-                    activeClass="active"
-                    to="apartments"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration= {700}
-                >
-                    Apartments
-                </NavLink>
-                <NavLink
-                    activeClass="active"
-                    to="services"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration= {700}
-                >
-                    Services
-                </NavLink>
-                <NavLink
-                    activeClass="active"
-                    to="location"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration= {700}
-                >
-                    Location
-                </NavLink>
-                <NavLink
-                    activeClass="active"
-                    to="contact-us"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration= {700}
-                >
-                    Contact Us
-                </NavLink>
-            </NavLinks>
-        </Nav>
-    )
+        <div>
+            <DesktopNavbar 
+                displayMobileNavbar={displayMobileNavbar}
+                setDisplayMobileNavbar={setDisplayMobileNavbar}
+            />
+        </div>
+    );
 }
 
 export default Header

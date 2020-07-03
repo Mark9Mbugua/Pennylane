@@ -7,7 +7,6 @@ import {
     SliderContainer,
     Slide
 } from './slider.styles';
-import { OneBedroomPhotos } from '../../data/OneBedroomData';
 
 const ImageSlider = ({images}) => {
     const [x, setX] = useState(0);

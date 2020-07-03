@@ -5,6 +5,10 @@ export const ApartmentsSection = styled.section`
     min-height: 75vh;
     display: grid;
     grid-template-rows: 25% 1fr;
+
+    @media screen and (max-width: 768px) {
+        grid-template-rows: 1fr;
+    }
 `;
 
 export const ApartmentsContainer = styled.div`
@@ -15,6 +19,12 @@ export const ApartmentsContainer = styled.div`
     justify-items: center;
     align-items: center;
     grid-gap: 40px;
+
+    @media screen and (max-width: 768px) {
+        width: 100vw;
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
 `;
 
 export const FeaturedApartment = styled.div`
@@ -46,6 +56,11 @@ export const Info = styled.p`
     text-align: center;
     font-weight: 700;
     letter-spacing: 4px;
+    
+    @media screen and (max-width: 768px) {
+        letter-spacing: 3px;
+    }
+    
 `;
 
 export const ImgContainer = styled.div`

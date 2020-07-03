@@ -10,13 +10,21 @@ export const ContactsSection = styled(ApartmentsSection)`
 `;
 
 export const ContactsContainer = styled(ApartmentsContainer)`
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 10px;
+    
+    @media screen and (max-width: 768px) {
+        grid-gap: 5px;
+    }
 `;
 
 export const ContactsForm = styled.form`
     grid-column: 1/3;
     width: 50%;
+
+    @media screen and (max-width: 768px) {
+        width: 90%;
+    }
 `;
 
 export const Phone = styled(Info)`
