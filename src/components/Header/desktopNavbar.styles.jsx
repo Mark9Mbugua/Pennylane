@@ -15,13 +15,21 @@ export const Logo = styled.div`
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 4px;
-    font-size: 18px;            
+    font-size: 18px;
+
+    @media screen and (max-width: 1024px) {
+        letter-spacing: 3x;
+    }            
 `;
 
 export const NavLinks = styled.ul`
     display: flex;
     justify-content: space-around;
     width: 40%;
+
+    @media screen and (max-width: 1024px) {
+        width: 50%;
+    }
 
     @media screen and (max-width: 768px) {
         position: absolute;

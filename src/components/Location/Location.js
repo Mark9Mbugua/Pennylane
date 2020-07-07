@@ -1,6 +1,7 @@
 import React from 'react';
 import {
-    LocationContainer, 
+    LocationContainer,
+    LocationSection, 
     MapRouter,
     MapCanvas
 } from './location.styles';
@@ -16,7 +17,7 @@ import {
 
 const Location = () => {
     return (
-        <ApartmentsSection id='location'>
+        <LocationSection id='location'>
             <TitleContainer>
                 <SectionTitle>Location</SectionTitle>
                 <Line />
@@ -37,7 +38,7 @@ const Location = () => {
                     </MapCanvas>
                 </MapRouter>
             </LocationContainer>
-        </ApartmentsSection>
+        </LocationSection>
     );
 }
 

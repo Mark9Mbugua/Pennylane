@@ -10,6 +10,11 @@ export const SliderContainer = styled.div`
     overflow: hidden; 
     justify-self: center;
 
+    @media screen and (max-width: 1024px) {
+        width: 95%;
+        height: 70vh;
+    }
+
     @media screen and (max-width: 768px) {
         width: 100%;
         height: 70vh;
@@ -18,9 +23,10 @@ export const SliderContainer = styled.div`
 
 export const Slide = styled.div`
     min-width: 100%;    
-    height: 80%;
+    height: 85%;
     transition: 0.5s;
-    /* overflow: hidden; */
+    border: 1px solid red;
+    overflow: hidden;
 `;
 
 const CustomButton = styled.button`
@@ -28,13 +34,17 @@ const CustomButton = styled.button`
     top: 50%;
     transform: translateY(-50%);
     width: 5%;
-    height: 80%;
+    height: 85%;
     background: none;
     outline: none;
     border: none;
 
     &:hover {
         background: rgba(0, 0, 0, 0.356);
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 10%;
     }
 
     @media screen and (max-width: 768px) {
