@@ -25,7 +25,6 @@ export const Slide = styled.div`
     min-width: 100%;    
     height: 85%;
     transition: 0.5s;
-    border: 1px solid red;
     overflow: hidden;
 `;
 
