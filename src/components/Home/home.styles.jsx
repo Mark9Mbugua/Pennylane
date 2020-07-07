@@ -10,6 +10,10 @@ export const HomeSection = styled.section`
     justify-items: center;
     align-items: center;
 
+    @media screen and (max-width: 1024px) {
+        min-height: 60vh; 
+    }
+
     @media screen and (max-width: 768px) {
         min-height: 60vh;
     }
@@ -23,6 +27,11 @@ export const Intro = styled.div`
     height: 30%;
     opacity: 0.9;
 
+    @media screen and (max-width: 1024px) {
+        height: 45%;
+        text-align: center; 
+    }
+
     @media screen and (max-width: 768px) {
         height: 40%;
         text-align: center;
@@ -33,6 +42,11 @@ export const IntroTitle = styled.h1`
     color: #fff;
     font-size: 10vh;
     padding: 10px 30px;
+
+    @media screen and (max-width: 1024px) {
+        padding: 5px 40px;
+        font-size: 6vh;
+    }
 
     @media screen and (max-width: 768px) {
         font-size: 5vh;
@@ -46,9 +60,13 @@ export const WhiteLine = styled.div`
     height: 10px;
     margin-bottom: 20px;
     
+    @media screen and (max-width: 1024px) {
+        width: 25vh;
+        height: 8px;
+    }
+
     @media screen and (max-width: 768px) {
         width: 25vh;
         height: 7px;
-    }
-      
+    }      
 `;

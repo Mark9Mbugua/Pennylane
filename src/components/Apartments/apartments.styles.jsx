@@ -6,6 +6,10 @@ export const ApartmentsSection = styled.section`
     display: grid;
     grid-template-rows: 25% 1fr;
 
+    @media screen and (max-width: 1024px) {
+        grid-template-rows: 20% 1fr;
+    }
+
     @media screen and (max-width: 768px) {
         grid-template-rows: 1fr;
     }
@@ -19,6 +23,10 @@ export const ApartmentsContainer = styled.div`
     justify-items: center;
     align-items: center;
     grid-gap: 40px;
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     @media screen and (max-width: 768px) {
         width: 100vw;

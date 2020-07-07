@@ -44,6 +44,10 @@ export const DetailsContainer = styled.div`
     justify-self: center; 
     justify-items: center;
 
+    @media screen and (max-width: 1024px) {
+        width: 90%;
+    } 
+
     @media screen and (max-width: 768px) {
         grid-template-columns: 1fr;
     } 
@@ -59,6 +63,19 @@ export const Details = styled.div`
     p {
         letter-spacing: 1.5px;
         line-height: 2rem;  
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        h3 {
+            font-size: 2vh;
+            line-height: 3rem;
+            letter-spacing: 3px;
+        }
+        p {
+            font-size: 1.5vh;
+            letter-spacing: 2px;
+            line-height: 2.5rem;  
+        }   
     }
 `;
 

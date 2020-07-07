@@ -51,7 +51,7 @@ const Services = () => {
     ]);
 
     return (
-        <ApartmentsSection id='services'>
+        <ServicesSection id='services'>
             <TitleContainer>
                 <SectionTitle>Services</SectionTitle>
                 <Line />
@@ -68,7 +68,7 @@ const Services = () => {
                     );
                 })}
             </ServicesContainer>
-        </ApartmentsSection>
+        </ServicesSection>
     )
 }
 

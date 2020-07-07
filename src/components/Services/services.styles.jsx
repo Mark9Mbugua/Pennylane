@@ -1,5 +1,14 @@
 import styled from 'styled-components';
-import { ApartmentsContainer } from '../Apartments/apartments.styles';
+import { 
+    ApartmentsContainer, 
+    ApartmentsSection 
+} from '../Apartments/apartments.styles';
+
+export const ServicesSection = styled(ApartmentsSection)`
+   @media screen and (max-width: 1024px) {
+        min-height: 80vh;
+    }      
+`;
 
 export const ServicesContainer = styled(ApartmentsContainer)`
     grid-template-columns: repeat(5, 1fr);
@@ -7,6 +16,12 @@ export const ServicesContainer = styled(ApartmentsContainer)`
     align-items: start;
     grid-gap: 25px;
     padding: 50px 20px;
+
+    @media screen and (max-width: 1024px) {
+        grid-gap: 15px;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 5px 15px;
+    }
 
     @media screen and (max-width: 768px) {
         grid-template-columns: 1fr;
