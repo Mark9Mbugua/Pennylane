@@ -1,4 +1,6 @@
-import React from 'react';
+import React, {useEffect, useState, useRef} from 'react';
+import {gsap, TweenMax, Power3} from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import {
     LocationContainer,
     LocationSection, 
@@ -15,14 +17,51 @@ import {
     ApartmentsSection
 } from '../Apartments/apartments.styles';
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Location = () => {
+    let locationSection = useRef(null);
+    let locationTitle = useRef(null);
+    let locationContainer = useRef(null);
+
+    useEffect(() =>{     
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: locationSection,
+                toggleActions: 'restart none restart none',
+                start: '6 70%'
+            }
+        });
+
+        gsap.to(locationSection, 0, {css: {visibility: 'visible'}});
+        
+        tl
+        .from(locationTitle,{
+            xPercent: 100,
+            duration: .8,
+            opacity: 0,
+            ease: "elastic.inOut(1, 0.3)"
+        })
+        .from(locationContainer, {
+            duration: 1, 
+            opacity: 0, 
+            y: -80,
+            ease: Power3.easeInOut
+        })
+        .to(locationContainer, {
+            duration: .7, 
+            y: -30,
+            ease: Power3.easeInOut
+        });
+    }, []);
+
     return (
-        <LocationSection id='location'>
-            <TitleContainer>
+        <LocationSection id='location' ref={el => locationSection = el}>
+            <TitleContainer ref={el => locationTitle = el}>
                 <SectionTitle>Location</SectionTitle>
                 <Line />
             </TitleContainer>
-            <LocationContainer>
+            <LocationContainer ref={el => locationContainer = el}>
                 <MapRouter>
                     <MapCanvas className="gmap_canvas">
                         <iframe 

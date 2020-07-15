@@ -4,7 +4,8 @@ export const TitleContainer = styled.div`
     display: grid;
     align-items: center;
     justify-items: center;
-    padding: 40px 0 0 0;
+    padding: 5px 0 ;
+    height: 15vh;
 
     @media screen and (max-width: 1024px) {
         padding: 10px 0 0 0;

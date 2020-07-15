@@ -18,7 +18,7 @@ export const Logo = styled.div`
     font-size: 18px;
 
     @media screen and (max-width: 1024px) {
-        letter-spacing: 3x;
+        letter-spacing: 3px;
     }            
 `;
 
@@ -43,7 +43,7 @@ export const NavLinks = styled.ul`
         width: 50%;
         transition: transform 0.5s ease-in;
         transform: translateX(${ props => props.displayMobileNavbar ? ("0%"): ("100%") });
-        z-index: 1;
+        z-index: 5;
     }
 `;
 

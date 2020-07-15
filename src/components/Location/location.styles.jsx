@@ -20,7 +20,6 @@ export const LocationContainer = styled(ApartmentsContainer)`
         grid-template-columns: 1fr;
         padding: 20px 20px;
         width: 100%;
-
     }
 
     @media screen and (max-width: 768px) {

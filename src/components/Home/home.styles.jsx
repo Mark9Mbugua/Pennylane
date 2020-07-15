@@ -4,11 +4,42 @@ import img from '../../images/compound1.jpg';
 export const HomeSection = styled.section`
     min-height: 80vh;
     display: grid;
-    background-image: url(${img});
+    background: #74706D;
     background-position: center;
     background-size: cover;
     justify-items: center;
     align-items: center;
+
+    .hero::after{
+        content: '';
+        background: black;
+        width: 100%;
+        height: 80vh;
+        position: absolute;
+        opacity: 0.3;
+    }
+
+    @media screen and (max-width: 1024px) {
+        min-height: 60vh; 
+    }
+
+    @media screen and (max-width: 768px) {
+        min-height: 60vh;
+    }
+`;
+
+export const Hero = styled.div`
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;    
+    }
 
     @media screen and (max-width: 1024px) {
         min-height: 60vh; 
@@ -20,12 +51,14 @@ export const HomeSection = styled.section`
 `;
 
 export const Intro = styled.div`
+    position: absolute;
     display: grid;
     justify-items: center;
     align-items: center;
     background: #74706D;
-    height: 30%;
+    height: 40%;
     opacity: 0.9;
+    z-index: 3;
 
     @media screen and (max-width: 1024px) {
         height: 45%;
@@ -42,6 +75,7 @@ export const IntroTitle = styled.h1`
     color: #fff;
     font-size: 10vh;
     padding: 10px 30px;
+    z-index: 4;
 
     @media screen and (max-width: 1024px) {
         padding: 5px 40px;
