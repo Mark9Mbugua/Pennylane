@@ -1,4 +1,6 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
+import {gsap, TweenMax, Power3} from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import oneBedroom from '../../images/1bdsitting.jpg';
 import twoBedroom from '../../images/2bdexterior.jpg';
 //import { Link } from 'react-router-dom';
@@ -20,14 +22,51 @@ import {
     TitleContainer
  } from '../Common/common.styles';
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Apartments = () => {
+    let apartments = useRef(null);
+    let apartmentContainer = useRef(null);
+    let apartment = useRef(null);
+
+    useEffect(() =>{
+        const apartmentFirst = apartmentContainer.children[0];
+        const apartmentSecond = apartmentFirst.nextSibling;
+        const apartmentThird = apartmentSecond.nextSibling;
+
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: apartments,
+                toggleActions: 'restart none restart none',
+                start: '6 70%'
+            }
+        });
+
+        TweenMax.to(apartments, 0, {css: {visibility: 'visible'}});
+        
+        tl
+        .from(apartments,{
+            xPercent: 100,
+            duration: .8,
+            opacity: 0,
+            ease: "elastic.inOut(1, 0.3)"
+        })
+        .from([apartmentFirst, apartmentSecond, apartmentThird], {
+            duration: .8, 
+            opacity: 0, 
+            y: 30,
+            ease: Power3.easeInOut, 
+            stagger: 0.3
+        });
+    }, []);
+    
     return (
-        <ApartmentsSection id='apartments'>
+        <ApartmentsSection id='apartments' ref={el => apartments = el}>
             <TitleContainer>
                 <SectionTitle>Apartments</SectionTitle>
                 <Line />
             </TitleContainer>
-            <ApartmentsContainer>
+            <ApartmentsContainer ref={el => apartmentContainer = el}>
                 <FeaturedApartment>
                     <ImgContainer className='img-container'>
                         <FeaturedImg src={oneBedroom} alt='One Bedroom' />

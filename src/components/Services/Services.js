@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState, useRef} from 'react';
+import {gsap, TweenMax, Power3} from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { 
     ApartmentsSection,
     Info 
 } from '../Apartments/apartments.styles';
 import {
+    ServicesTitleContainer,
     ServicesSection, 
     ServicesContainer,
     ServiceItem,
@@ -20,8 +23,48 @@ import {
  import waterIcon from '../../images/water.svg';
  import wifiIcon from '../../images/wifi.svg';
 
+ gsap.registerPlugin(ScrollTrigger);
 
 const Services = () => {
+    let serviceItem = useRef(null);
+    let servicesSection = useRef(null);
+    let servicesTitle = useRef(null);
+    let serviceItemImage = useRef(null);
+    let servicesContainer = useRef(null);
+
+    useEffect(() =>{
+        const serviceFirst = servicesContainer.children[0];
+        const serviceSecond = serviceFirst.nextSibling;
+        const serviceThird = serviceSecond.nextSibling;
+        const serviceFourth = serviceThird.nextSibling;
+        const serviceFifth = serviceFourth.nextSibling;       
+
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: servicesSection,
+                toggleActions: 'restart none none none',
+                start: '6 70%'
+            }
+        });
+
+        gsap.to(servicesSection, 0, {css: {visibility: 'visible'}});
+        
+        tl
+        .from(servicesTitle,{
+            xPercent: 100,
+            duration: .8,
+            opacity: 0,
+            ease: "elastic.inOut(1, 0.3)"
+        })
+        .from([serviceFirst, serviceSecond, serviceThird, serviceFourth, serviceFifth], {
+            duration: .8, 
+            opacity: 0, 
+            y: -40,
+            ease: Power3.easeInOut, 
+            stagger: 0.5
+        });
+    }, []);
+    
     const [services, setServices] = useState([
         { 
             icon: trashIcon,
@@ -51,20 +94,22 @@ const Services = () => {
     ]);
 
     return (
-        <ServicesSection id='services'>
-            <TitleContainer>
+        <ServicesSection id='services' ref={el => servicesSection = el}>
+            <TitleContainer ref={el => servicesTitle = el}>
                 <SectionTitle>Services</SectionTitle>
                 <Line />
             </TitleContainer>
-            <ServicesContainer>
+            <ServicesContainer ref={el => servicesContainer = el}>
                 {services.map((item, index) => {
                     console.log(item.icon);
                     return (
-                    <ServiceItem key={index}>
-                        <img src={item.icon} />
-                        <Info>{item.title}</Info>
-                        <ServiceInfo>{item.info}</ServiceInfo>
-                    </ServiceItem>
+                        <ServiceItem key={index} ref={el => serviceItem = el}>
+                            <img src={item.icon} ref={el => serviceItemImage = el} />
+                            <div>
+                                <Info>{item.title}</Info>
+                                <ServiceInfo>{item.info}</ServiceInfo>
+                            </div>
+                        </ServiceItem>
                     );
                 })}
             </ServicesContainer>
