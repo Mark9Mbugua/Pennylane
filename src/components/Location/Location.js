@@ -47,11 +47,6 @@ const Location = () => {
             opacity: 0, 
             y: -80,
             ease: Power3.easeInOut
-        })
-        .to(locationContainer, {
-            duration: .7, 
-            y: -30,
-            ease: Power3.easeInOut
         });
     }, []);
 
