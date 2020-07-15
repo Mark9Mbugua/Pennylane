@@ -27,7 +27,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Apartments = () => {
     let apartments = useRef(null);
     let apartmentContainer = useRef(null);
-    let apartment = useRef(null);
+    let apartmentsTitle = useRef(null);
 
     useEffect(() =>{
         const apartmentFirst = apartmentContainer.children[0];
@@ -45,7 +45,7 @@ const Apartments = () => {
         TweenMax.to(apartments, 0, {css: {visibility: 'visible'}});
         
         tl
-        .from(apartments,{
+        .from(apartmentsTitle,{
             xPercent: 100,
             duration: .8,
             opacity: 0,
@@ -62,7 +62,7 @@ const Apartments = () => {
     
     return (
         <ApartmentsSection id='apartments' ref={el => apartments = el}>
-            <TitleContainer>
+            <TitleContainer ref={el => apartmentsTitle = el}>
                 <SectionTitle>Apartments</SectionTitle>
                 <Line />
             </TitleContainer>

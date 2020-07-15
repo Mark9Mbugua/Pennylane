@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import img from '../../images/compound1.jpg';
 
 export const HomeSection = styled.section`
-    min-height: 80vh;
+    min-height: 90vh;
     display: grid;
     background: #74706D;
     background-position: center;
@@ -14,17 +14,23 @@ export const HomeSection = styled.section`
         content: '';
         background: black;
         width: 100%;
-        height: 80vh;
+        height: 90vh;
         position: absolute;
         opacity: 0.3;
     }
 
     @media screen and (max-width: 1024px) {
-        min-height: 60vh; 
+        min-height: 90vh;
+        .hero::after{
+            height: 90vh;
+        } 
     }
 
     @media screen and (max-width: 768px) {
-        min-height: 60vh;
+        min-height: 80vh;
+        .hero::after{
+            height: 80vh;
+        } 
     }
 `;
 
