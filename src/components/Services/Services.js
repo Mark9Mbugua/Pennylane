@@ -101,7 +101,6 @@ const Services = () => {
             </TitleContainer>
             <ServicesContainer ref={el => servicesContainer = el}>
                 {services.map((item, index) => {
-                    console.log(item.icon);
                     return (
                         <ServiceItem key={index} ref={el => serviceItem = el}>
                             <img src={item.icon} ref={el => serviceItemImage = el} />

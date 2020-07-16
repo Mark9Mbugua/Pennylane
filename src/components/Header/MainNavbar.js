@@ -3,16 +3,17 @@ import {
     Burger,
     Nav,
     Logo,
+    LogoLink,
     NavLinks,
     NavLink,
     Home 
-} from './desktopNavbar.styles';
+} from './mainNavbar.styles';
 
-const DesktopNavbar = ({displayMobileNavbar, setDisplayMobileNavbar}) => {
+const MainNavbar = ({displayMobileNavbar, setDisplayMobileNavbar}) => {
     return (
         <Nav>
             <Logo>
-                <h4>Pennylane Apartments</h4>
+                <LogoLink to='/'>Pennylane Apartments</LogoLink>
             </Logo>
             <NavLinks displayMobileNavbar={displayMobileNavbar}>
                 <Home 
@@ -75,4 +76,4 @@ const DesktopNavbar = ({displayMobileNavbar, setDisplayMobileNavbar}) => {
     )
 }
 
-export default DesktopNavbar
+export default MainNavbar
