@@ -66,8 +66,8 @@ const ContactUs = () => {
                 <Phone>Call us on: +254712340908</Phone>
                 <Phone>Or</Phone>
                 <Phone>Email Us:</Phone>
-                <ContactsForm name='contact-form' method='post' ref={el => contactsForm = el}>
-                    <input type='hidden' name='form-name' value='contact' />
+                <ContactsForm name='contact-us' method='post' ref={el => contactsForm = el}>
+                    <input type='hidden' name='form-name' value='contact-us' />
                     <FormInput
                         type='text'
                         name='name'
