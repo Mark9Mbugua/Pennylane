@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import DesktopNavbar from './DesktopNavbar';
+import MainNavbar from './MainNavbar';
 
 const Header = () => {
     const [displayMobileNavbar, setDisplayMobileNavbar] = useState(false);
@@ -20,7 +20,7 @@ const Header = () => {
 
     return (
         <div>
-            <DesktopNavbar 
+            <MainNavbar 
                 displayMobileNavbar={displayMobileNavbar}
                 setDisplayMobileNavbar={setDisplayMobileNavbar}
             />

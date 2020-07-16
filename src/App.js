@@ -11,7 +11,7 @@ import ThreeBedroom from './pages/ThreeBedroom';
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
       <Switch>
         <Route exact path='/' component={Main} />
         <Route exact path='/one-bedroom' component={OneBedroom} />

@@ -77,6 +77,19 @@ export const Home = styled(HomeLink)`
     }
 `;
 
+export const LogoLink = styled(HomeLink)`
+    text-decoration: none;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+        background: #fff;
+        color: #74706D;
+    }
+`;
+
 export const Burger = styled.div`
     display: none;
     cursor: pointer;
