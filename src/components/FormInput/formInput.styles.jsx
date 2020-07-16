@@ -7,6 +7,10 @@ const shrinkLabelStyles = css`
   top: -14px;
   font-size: 12px;
   color: ${mainColor};
+
+  @media screen and (max-width: 768px) {
+    top: -4px;
+  }
 `;
 
 export const GroupContainer = styled.div`
@@ -14,7 +18,7 @@ export const GroupContainer = styled.div`
   margin: 35px 0;
 
   @media screen and (max-width: 768px) {
-    margin: 25px 0;
+    margin: 5px 0;
   }
 `;
 
@@ -84,7 +88,7 @@ export const FormInputLabel = styled.label`
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 14px;
+    font-size: 12px;
     top: 5px;
     left: 3px;
   }
