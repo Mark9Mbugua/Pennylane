@@ -9,7 +9,7 @@ const TextArea = ({ label, ...props }) => (
   <GroupContainer>
     <TextAreaContainer {...props} />
     {label ? (
-      <FormInputLabel>
+      <FormInputLabel className={props.value.length ? 'shrink' : ''}>
         {label}
       </FormInputLabel>
     ) : null}

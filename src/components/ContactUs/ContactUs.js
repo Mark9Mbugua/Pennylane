@@ -56,6 +56,11 @@ const ContactUs = () => {
         });
     }, []);
 
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    
+
     return (
         <ContactsSection id='contact-us' ref={el => contactsSection = el}>
             <TitleContainer ref={el => contactsTitle = el}>
@@ -72,17 +77,23 @@ const ContactUs = () => {
                         type='text'
                         name='name'
                         label='Name'
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
                         required
                     />
                     <FormInput
                         type='email'
                         name='email'
                         label='Email'
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                         required
                     />
                     <TextArea
                         name='message'
                         label='Message'
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
                         required
                     />
                     <CustomButton type='submit'>Submit</CustomButton>

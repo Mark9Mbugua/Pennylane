@@ -39,7 +39,7 @@ const Home = () => {
                 </Intro>
             </Hero>    
         </HomeSection>
-    )
+    );
 }
 
 export default Home
