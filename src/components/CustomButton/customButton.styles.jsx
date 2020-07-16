@@ -29,4 +29,12 @@ export const CustomButtonContainer = styled.button`
   display: flex;
   justify-content: center;
   ${getButtonStyles}
+
+  @media screen and (max-width: 768px) {
+    min-width: 90px;
+    font-size: 12px;
+    height: 40px;
+    letter-spacing: 0.4px;
+    line-height: 40px;
+  }
 `;

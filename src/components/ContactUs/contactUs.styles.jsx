@@ -37,6 +37,7 @@ export const ContactsForm = styled.form`
     width: 50%;
 
     @media screen and (max-width: 768px) {
+        margin-top: 20px;
         width: 80%;
     }
 `;
