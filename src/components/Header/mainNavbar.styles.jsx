@@ -19,6 +19,11 @@ export const Logo = styled.div`
 
     @media screen and (max-width: 1024px) {
         letter-spacing: 3px;
+    }
+
+    @media screen and (max-width: 768px) {
+        letter-spacing: 3px;
+        font-size: 16px;
     }            
 `;
 
