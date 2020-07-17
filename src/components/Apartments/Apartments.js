@@ -3,7 +3,6 @@ import {gsap, TweenMax, Power3} from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import oneBedroom from '../../images/1bdsitting.jpg';
 import twoBedroom from '../../images/2bdexterior.jpg';
-//import { Link } from 'react-router-dom';
 import { 
     ApartmentsContainer,
     ApartmentsSection,

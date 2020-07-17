@@ -32,6 +32,7 @@ export const ApartmentsContainer = styled.div`
         width: 100vw;
         grid-template-columns: 1fr;
         margin: 0;
+        grid-gap: 30px;
     }
 `;
 
@@ -45,6 +46,10 @@ export const FeaturedApartment = styled.div`
     }
     .img-container:hover .house-link {
         transform: translate(-50%, -50%) scale(1);
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 90%;
     }
 `;
 
