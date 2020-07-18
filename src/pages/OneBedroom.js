@@ -11,7 +11,7 @@ import Slider from '../components/Slider/Slider';
 import NoLinksNavbar from '../components/Header/NoLinksNavbar';
 import { DetailsContainer } from './apartmentDetail.styles';
 import { OneBedroomPhotos } from '../data/OneBedroomData';
-import oneBd from '../images/one-bd-kitchen-1.jpg';
+import oneBd from '../images/one-bd-kitchen-1-min.jpg';
 
 const OneBedroom = (props) => {
     console.log(props);
