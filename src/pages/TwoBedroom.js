@@ -11,7 +11,7 @@ import NoLinksNavbar from '../components/Header/NoLinksNavbar';
 import Slider from '../components/Slider/Slider';
 import { DetailsContainer } from './apartmentDetail.styles';
 import { TwoBedroomPhotos } from '../data/TwobedroomData';
-import twoBd from '../images/2bdexterior2.jpg'
+import twoBd from '../images/2bdexterior2-min.jpg';
 
 const TwoBedroom = () => {
     return (

@@ -1,8 +1,9 @@
 import React, {useEffect, useRef} from 'react';
 import {gsap, TweenMax, Power3} from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import oneBedroom from '../../images/1bdsitting.jpg';
-import twoBedroom from '../../images/2bdexterior.jpg';
+import oneBedroom from '../../images/full2-min.jpg';
+import twoBedroom from '../../images/2bdexterior-min.jpg';
+import threeBedroom from '../../images/1bdsitting-min.jpg';
 import { 
     ApartmentsContainer,
     ApartmentsSection,
@@ -90,7 +91,7 @@ const Apartments = () => {
                 </FeaturedApartment>
                 <FeaturedApartment>
                     <ImgContainer className='img-container'>
-                        <FeaturedImg src={oneBedroom} alt='Three Bedroom' />
+                        <FeaturedImg src={threeBedroom} alt='Three Bedroom' />
                         <PriceTop>
                             <PriceTitle>Ksh 30,000</PriceTitle>
                             <p>per month</p>

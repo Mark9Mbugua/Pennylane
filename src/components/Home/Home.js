@@ -7,7 +7,7 @@ import {
     IntroTitle,
     WhiteLine 
 } from './home.styles';
-import img from '../../images/compound1.jpg';
+import img from '../../images/compound3-min.jpg';
 
 const Home = () => {
     let home = useRef(null);
