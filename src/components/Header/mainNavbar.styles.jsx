@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { Link } from 'react-scroll';
 import { Link as HomeLink } from 'react-router-dom';
 

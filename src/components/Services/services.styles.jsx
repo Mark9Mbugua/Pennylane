@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import img from '../../images/compound1.jpg';
 import { 
     ApartmentsContainer, 
     ApartmentsSection 

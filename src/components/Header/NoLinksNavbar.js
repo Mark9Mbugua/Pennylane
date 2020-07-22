@@ -2,9 +2,7 @@ import React from 'react';
 import { 
     Nav,
     Logo,
-    LogoLink,
-    NavLinks,
-    Home 
+    LogoLink
 } from './mainNavbar.styles';
 
 const NoLinksNavbar = () => {

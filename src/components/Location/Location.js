@@ -1,5 +1,5 @@
-import React, {useEffect, useState, useRef} from 'react';
-import {gsap, TweenMax, Power3} from 'gsap';
+import React, {useEffect, useRef} from 'react';
+import {gsap, Power3} from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import {
     LocationContainer,
@@ -12,10 +12,6 @@ import {
     SectionTitle,
     TitleContainer
  } from '../Common/common.styles';
-
- import { 
-    ApartmentsSection
-} from '../Apartments/apartments.styles';
 
 gsap.registerPlugin(ScrollTrigger);
 

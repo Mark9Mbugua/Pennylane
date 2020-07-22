@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import img from '../../images/compound1.jpg';
 
 export const HomeSection = styled.section`
     min-height: 90vh;
