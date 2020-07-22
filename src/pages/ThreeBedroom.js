@@ -27,20 +27,17 @@ const ThreeBedroom = () => {
                 <DetailsContainer>
                     <Details>
                         <h3>Apartment Details</h3>
-                        <p>We have quite the spacious living room. The bedrooms are
-                        furnished with modern closets.The master bedrooom is self-contained.
-                        A modern kitchen to serve your home with a balcony that offers a serene view of 
-                        Banana and its surroundings.The kitchen also houses a spacious store. 
-                        Modern bathrooms and toilets.</p>
+                        <p>We have quite the spacious living room. The master has ensuite bathroom with shower.
+                        A modern kitchen to serve your home with a spacious store and a balcony.</p>
                     </Details>
                     <Info>
                         <h3>Info</h3>
-                        <p>Rent: Ksh.30,000</p>
+                        <p>Rent: Ksh.32,000</p>
                         <p>Bedrooms: 3</p>
-                        <p>Toilets: 2</p>
-                        <p>Bathrooms: 2</p>
+                        <p>Restrooms: 2</p>
+                        <p>Shower: 2</p>
                         <p>Store: 1</p>
-                        <p>Tenancy requirements: Deposit + Rent = Ksh.60,000</p>
+                        <p>Tenancy requirements: Deposit + Rent = Ksh.64,000</p>
                         <p>Balcony: 1</p>
                     </Info>
                 </DetailsContainer>         

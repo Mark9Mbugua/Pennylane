@@ -27,18 +27,17 @@ const TwoBedroom = () => {
                 <DetailsContainer>
                     <Details>
                         <h3>Apartment Details</h3>
-                        <p>We have quite the spacious living room. The bedrooms are equally spacious
-                        furnished with modern closets.The master bedrooom is self-contained.
+                        <p>We have quite the spacious living room. The two bedrooms are equally as spacious
+                        and the master has ensuite bathroom with shower.
                         A modern kitchen to serve your home with two balconies that offer a serene view of 
-                        Banana and its surroundings.The kitchen also houses a spacious store. 
-                        Modern bathrooms and toilets.</p>
+                        Banana and its surroundings.The kitchen also houses a spacious store.</p>
                     </Details>
                     <Info>
                         <h3>Info</h3>
                         <p>Rent: Ksh.35,000</p>
                         <p>Bedrooms: 2</p>
-                        <p>Toilets: 2</p>
-                        <p>Bathrooms: 2</p>
+                        <p>Restrooms: 2</p>
+                        <p>Shower: 2</p>
                         <p>Store: 1</p>
                         <p>Tenancy requirements: Deposit + Rent = Ksh.70,000</p>
                         <p>Balconies: 2</p>

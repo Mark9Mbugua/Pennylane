@@ -28,17 +28,15 @@ const OneBedroom = (props) => {
                 <DetailsContainer>
                     <Details>
                         <h3>Apartment Details</h3>
-                        <p>We have quite the spacious living room. The bedroom is equally spacious
-                        furnished with modern closets. A modern kitchen to serve your home with a 
-                        balcony that offers a serene view of Banana and its surroundings.The kitchen also 
-                        houses a spacious store. Modern bathroom and toilet.</p>
+                        <p>We have quite the spacious living room and bedroom. A modern kitchen to serve your home with a 
+                        spacious store and a balcony.</p>
                     </Details>
                     <Info>
                         <h3>Info</h3>
                         <p>Rent: Ksh.20,000</p>
                         <p>Bedrooms: 1</p>
-                        <p>Toilet: 1</p>
-                        <p>Bathroom: 1</p>
+                        <p>Restrooms: 1</p>
+                        <p>Shower: 1</p>
                         <p>Store: 1</p>
                         <p>Tenancy requirements: Deposit + Rent = Ksh.40,000</p>
                         <p>Balcony: 1</p>
