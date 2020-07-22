@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect }  from 'react';
+import { useLocation } from "react-router-dom";
 import { 
     ApartmentContainer,
     ApartmentHero,
@@ -11,9 +12,15 @@ import NoLinksNavbar from '../components/Header/NoLinksNavbar';
 import Slider from '../components/Slider/Slider';
 import { DetailsContainer } from './apartmentDetail.styles';
 import { TwoBedroomPhotos } from '../data/TwobedroomData';
-import twoBd from '../images/2bdexterior2-min.jpg'
+import twoBd from '../images/2bdexterior2-min.jpg';
 
 const ThreeBedroom = () => {
+    const { pathname } = useLocation();
+   
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+    
     return (
         <>
             <NoLinksNavbar />
