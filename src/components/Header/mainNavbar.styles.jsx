@@ -105,6 +105,21 @@ export const Burger = styled.div`
             height: 3px;
             background-color: rgb(226, 226, 226);
             margin: 5px;
+            transition: all 0.3s linear;
+            transform-origin: 1px;
+
+            &:nth-child(1) {
+                transform: ${({ displayMobileNavbar }) => displayMobileNavbar ? 'rotate(45deg)' : 'rotate(0)'};
+            }
+
+            &:nth-child(2) {
+                transform: ${({ displayMobileNavbar }) => displayMobileNavbar ? 'translateX(100%)' : 'translateX(0)'};
+                opacity: ${({ displayMobileNavbar }) => displayMobileNavbar ? 0 : 1};
+            }
+
+            &:nth-child(3) {
+                transform: ${({ displayMobileNavbar }) => displayMobileNavbar ? 'rotate(-45deg)' : 'rotate(0)'};
+            }
         }
     }
 `;
