@@ -1,5 +1,5 @@
 import React, {useEffect, useState, useRef} from 'react';
-import {gsap, TweenMax, Power3} from 'gsap';
+import {gsap, Power3} from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import {
     Line,
@@ -22,7 +22,6 @@ const ContactUs = () => {
     let contactsSection = useRef(null);
     let contactsTitle = useRef(null);
     let contactsContainer = useRef(null);
-    let contactsForm = useRef(null);
 
     useEffect(() => {
         const contactFirst = contactsContainer.children[0];
@@ -71,7 +70,7 @@ const ContactUs = () => {
                 <Phone>Call us on: +254712340908</Phone>
                 <Phone>Or</Phone>
                 <Phone>Email Us:</Phone>
-                <ContactsForm name='contact-us' method='post' ref={el => contactsForm = el}>
+                <ContactsForm name='contact-us' method='post'>
                     <input type='hidden' name='form-name' value='contact-us' />
                     <FormInput
                         type='text'

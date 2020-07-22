@@ -1,12 +1,8 @@
 import React, {useEffect, useState, useRef} from 'react';
-import {gsap, TweenMax, Power3} from 'gsap';
+import {gsap, Power3} from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { 
-    ApartmentsSection,
-    Info 
-} from '../Apartments/apartments.styles';
+import { Info } from '../Apartments/apartments.styles';
 import {
-    ServicesTitleContainer,
     ServicesSection, 
     ServicesContainer,
     ServiceItem,
@@ -26,10 +22,8 @@ import {
  gsap.registerPlugin(ScrollTrigger);
 
 const Services = () => {
-    let serviceItem = useRef(null);
     let servicesSection = useRef(null);
     let servicesTitle = useRef(null);
-    let serviceItemImage = useRef(null);
     let servicesContainer = useRef(null);
 
     useEffect(() =>{
@@ -65,7 +59,7 @@ const Services = () => {
         });
     }, []);
     
-    const [services, setServices] = useState([
+    const [services] = useState([
         { 
             icon: trashIcon,
             title: 'Trash Collection',
@@ -102,8 +96,8 @@ const Services = () => {
             <ServicesContainer ref={el => servicesContainer = el}>
                 {services.map((item, index) => {
                     return (
-                        <ServiceItem key={index} ref={el => serviceItem = el}>
-                            <img src={item.icon} ref={el => serviceItemImage = el} />
+                        <ServiceItem key={index}>
+                            <img src={item.icon} alt='service item' />
                             <div>
                                 <Info>{item.title}</Info>
                                 <ServiceInfo>{item.info}</ServiceInfo>

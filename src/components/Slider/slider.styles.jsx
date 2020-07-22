@@ -55,11 +55,14 @@ export const Left = styled(CustomButton)`
     left: 0;
     .arrow{
         font-size: 5vh;
-        color: grey;
+        color: white;
         opacity: 10;
+        background: #74706D;
+        
         &:hover {
-            color: white;
-            background: inherit;
+            color: #74706D;
+            background: white;
+            
         }
     }
 `;
@@ -68,12 +71,14 @@ export const Right = styled(CustomButton)`
     right: 0;
     .arrow{
         font-size: 5vh;
-        color: grey;
+        color: white;
         opacity: 10;
+        background: #74706D;
 
         &:hover {
-            color: white;
-            background: inherit;
+            color: #74706D;
+            background: white;
+            
         } 
     }
 `;
