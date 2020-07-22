@@ -69,27 +69,27 @@ const Services = () => {
         { 
             icon: trashIcon,
             title: 'Trash Collection',
-            info: 'Trash is collected every Wednesday and Saturday' 
+            info: 'Trash is collected every Thursday.' 
         },
         { 
             icon: wifiIcon,
             title: 'Wifi Zone',
-            info: 'Wifi available courtesy of Safaricom Home Fibre' 
+            info: 'Wifi is available courtesy of Safaricom Home Fibre.' 
         },
         { 
             icon: waterIcon,
             title: 'Guaranteed water supply',
-            info: 'Water is frequently pumped to all apartments from a borehole located within the compound' 
+            info: 'Water is frequently pumped to all apartments from a borehole located within the compound.' 
         },
         { 
             icon: cctvIcon,
             title: '24/7 security',
-            info: 'The compound is guarded around the clock by competent security guards and world-class CCTV coverage' 
+            info: 'The compound is guarded around the clock by competent security guards, world-class CCTV coverage and a police station that is less than 2km away.' 
         },
         { 
             icon: roadIcon,
             title: 'Prime Location',
-            info: 'The apartment buildings are located along Limuru road near Banana Town in Kiambu County close to all necessary social ammenities' 
+            info: 'The apartment buildings are located along good road infrastructure and near various healthcare facilities, schools, shopping centres, a market etc.' 
         }
     ]);
 

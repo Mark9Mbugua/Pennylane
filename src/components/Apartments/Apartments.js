@@ -93,7 +93,7 @@ const Apartments = () => {
                     <ImgContainer className='img-container'>
                         <FeaturedImg src={threeBedroom} alt='Three Bedroom' />
                         <PriceTop>
-                            <PriceTitle>Ksh 30,000</PriceTitle>
+                            <PriceTitle>Ksh 32,000</PriceTitle>
                             <p>per month</p>
                         </PriceTop>
                         <HouseLink className='house-link' to={`/three-bedroom`}>Features</HouseLink>
