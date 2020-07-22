@@ -46,7 +46,7 @@ const Apartments = () => {
         
         tl
         .from(apartmentsTitle,{
-            xPercent: 100,
+            yPercent: -100,
             duration: .8,
             opacity: 0,
             ease: "elastic.inOut(1, 0.3)"
