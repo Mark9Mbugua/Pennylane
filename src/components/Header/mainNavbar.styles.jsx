@@ -8,7 +8,6 @@ export const Nav = styled.nav`
     min-height: 8vh;
     background: #74706D;
     align-items: center;
-
 `;
 
 export const Logo = styled.div`

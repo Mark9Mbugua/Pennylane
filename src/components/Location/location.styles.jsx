@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { ApartmentsContainer, ApartmentsSection } from '../Apartments/apartments.styles';
 
 export const LocationSection = styled(ApartmentsSection)`
+    grid-template-rows: 18% 1fr;
+    
     @media screen and (max-width: 1024px) {
         grid-template-rows: 20% 1fr;
         min-height: 70vh;
@@ -14,7 +16,7 @@ export const LocationSection = styled(ApartmentsSection)`
 
 export const LocationContainer = styled(ApartmentsContainer)`
     grid-template-columns: 1fr;
-    padding: 30px 20px 100px;
+    padding: 10px 20px;
 
     @media screen and (max-width: 1024px) {
         grid-template-columns: 1fr;
