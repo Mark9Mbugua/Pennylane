@@ -6,12 +6,41 @@ export const ApartmentsSection = styled.section`
     display: grid;
     grid-template-rows: 25% 1fr;
 
-    @media screen and (max-width: 1024px) {
+    @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px)
+    and (orientation: landscape) 
+    and (-webkit-min-device-pixel-ratio: 1.5) {
         grid-template-rows: 20% 1fr;
+        min-height: 135vh;
     }
 
-    @media screen and (max-width:  480px) {
-        grid-template-rows: 1fr;
+    @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px)
+    and (orientation: portrait) 
+    and (-webkit-min-device-pixel-ratio: 1.5) {
+        grid-template-rows: 20% 1fr;
+        min-height: 80vh;
+    }
+
+    @media screen 
+    and (min-width: 768px)
+    and (max-width: 1024px)
+    and (min-height: 768px)
+    and (max-height: 768px) {
+        min-height: 135vh;
+    }
+
+    @media screen 
+    and (min-width: 480px)
+    and (max-width: 768px) {
+        min-height: 90vh;
+    }
+
+    @media screen and (max-width: 480px) {
+        grid-template-rows: 10% 1fr;
+        min-height: 180vh;
     }
 `;
 
@@ -24,15 +53,38 @@ export const ApartmentsContainer = styled.div`
     align-items: center;
     grid-gap: 40px;
 
-    @media screen and (max-width: 1024px) {
+    @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px)
+    and (-webkit-min-device-pixel-ratio: 1.5) {
         grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        width: 90vw;
     }
 
-    @media screen and (max-width:  480px) {
+    @media screen 
+    and (min-width: 768px)
+    and (max-width: 1024px)
+    and (min-height: 768px)
+    and (max-height: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+        width: 90vw;
+    }
+
+    @media screen 
+    and (min-width: 480px)
+    and (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        width: 95vw;
+        grid-gap: 20px;
+    }
+
+    @media screen and (max-width: 480px) {
         width: 100vw;
         grid-template-columns: 1fr;
         margin: 0;
-        grid-gap: 30px;
+        grid-gap: 25px;
     }
 `;
 
@@ -41,15 +93,57 @@ export const FeaturedApartment = styled.div`
     align-items: center;
     box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
     transition: all 0.3s linear;
+
     &:hover {
-        box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);;
+        box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
     }
     .img-container:hover .house-link {
         transform: translate(-50%, -50%) scale(1);
     }
 
-    @media screen and (max-width:  480px) {
+    @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px) 
+    and (-webkit-min-device-pixel-ratio: 1.5) {
+        margin: 0 10px;
+        box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+
+        .img-container .house-link {
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+
+    @media screen 
+    and (min-width: 768px)
+    and (max-width: 1024px)
+    and (min-height: 768px)
+    and (max-height: 768px) {
+        margin: 0 10px;
+        box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+
+        .img-container .house-link {
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+
+    @media screen 
+    and (min-width: 480px)
+    and (max-width: 768px) {
+        margin: 0 10px;
+        box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+        
+        .img-container .house-link {
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+
+    @media screen and (max-width: 480px) {
         width: 90%;
+        box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+        
+        .img-container .house-link {
+            transform: translate(-50%, -50%) scale(1);
+        }
     }
 `;
 
@@ -121,6 +215,17 @@ export const HouseLink = styled(Link)`
     border: 3px solid #af9a7d;
     text-transform: uppercase;
     cursor: pointer;
+    
+    @media screen 
+    and (min-width: 768px)
+    and (max-width: 1024px)
+    and (min-height: 768px)
+    and (max-height: 768px) {
+        &:focus {
+            background: transparent;
+            color: #ececec;
+        }
+    }
     
     &:hover {
         background: transparent;
