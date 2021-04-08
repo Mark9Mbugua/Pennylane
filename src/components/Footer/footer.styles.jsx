@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const FooterSection = styled.section`
     min-height: 15vh;
-    margin: 140px 0 0;
+    margin: 80px 0 0;
     background: #74706D;
     display: grid;
     grid-template-rows: 1fr;    

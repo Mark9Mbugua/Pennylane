@@ -9,7 +9,7 @@ export const LocationSection = styled(ApartmentsSection)`
         min-height: 70vh;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width:  480px) {
         min-height: 90vh;
     }
 `;
@@ -24,7 +24,7 @@ export const LocationContainer = styled(ApartmentsContainer)`
         width: 100%;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width:  480px) {
         padding: 10px;
     }
 `;

@@ -17,7 +17,7 @@ export const ServicesSection = styled(ApartmentsSection)`
 
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width:  480px) {
         min-height: 220vh;
         justify-items: center;
     }      
@@ -37,7 +37,7 @@ export const ServicesContainer = styled(ApartmentsContainer)`
         width: 90%;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width:  480px) {
         grid-template-columns: 1fr;
         grid-gap: 20px;
         padding: 10px 10px;
@@ -62,7 +62,7 @@ export const ServiceItem = styled.div`
         width: 95%;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width:  480px) {
         grid-template-columns: 1fr;
         justify-items: center;
         height: 50vh;
@@ -79,7 +79,7 @@ export const ServiceInfo = styled.p`
     letter-spacing: 3px;
     line-height: 2.5rem;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width:  480px) {
         letter-spacing: 2px;
         line-height: 1.5rem;
     }

@@ -8,7 +8,7 @@ const shrinkLabelStyles = css`
   font-size: 12px;
   color: ${mainColor};
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width:  480px) {
     top: -4px;
   }
 `;
@@ -17,7 +17,7 @@ export const GroupContainer = styled.div`
   position: relative;
   margin: 35px 0;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width:  480px) {
     margin: 5px 0;
   }
 `;
@@ -41,7 +41,7 @@ export const FormInputContainer = styled.input`
     ${shrinkLabelStyles}
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width:  480px) {
     font-size: 16px;
     padding: 5px 5px 5px 2.5px;
     margin: 15px 0;
@@ -67,7 +67,7 @@ export const TextAreaContainer = styled.textarea`
         ${shrinkLabelStyles}
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width:  480px) {
       font-size: 16px;
       padding: 7px 7px 7px 3px;
       margin: 15px 0;
@@ -87,7 +87,7 @@ export const FormInputLabel = styled.label`
     ${shrinkLabelStyles}
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width:  480px) {
     font-size: 12px;
     top: 5px;
     left: 3px;

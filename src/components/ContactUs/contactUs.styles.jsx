@@ -7,13 +7,15 @@ import {
 
 export const ContactsSection = styled(ApartmentsSection)`
     grid-gap: 10px;
+    height: 115vh;
+    grid-template-rows: 15% 1fr;
 
     @media screen and (max-width: 1024px) {
         grid-gap: 5px;
         min-height: 70vh;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width:  480px) {
         grid-gap: 5px;
     }
 `;
@@ -27,7 +29,7 @@ export const ContactsContainer = styled(ApartmentsContainer)`
         width: 100%;
     }
     
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width:  480px) {
         grid-gap: 5px;
     }
 `;
@@ -36,7 +38,7 @@ export const ContactsForm = styled.form`
     grid-column: 1/3;
     width: 50%;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width:  480px) {
         margin-top: 20px;
         width: 80%;
     }

@@ -3,9 +3,12 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: 'Playfair Display', serif;
+  overflow-x: hidden;
+      
+
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:  480px) {
   *{
     overflow-x: hidden;
   }

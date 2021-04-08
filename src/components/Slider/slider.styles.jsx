@@ -15,7 +15,7 @@ export const SliderContainer = styled.div`
         height: 70vh;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width:  480px) {
         width: 100%;
         height: 70vh;
     }  
@@ -46,7 +46,7 @@ const CustomButton = styled.button`
         width: 10%;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width:  480px) {
         width: 10%;
     }
 `;

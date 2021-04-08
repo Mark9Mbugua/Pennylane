@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const ApartmentsSection = styled.section`
-    min-height: 75vh;
+    min-height: 100vh;
     display: grid;
     grid-template-rows: 25% 1fr;
 
@@ -10,7 +10,7 @@ export const ApartmentsSection = styled.section`
         grid-template-rows: 20% 1fr;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width:  480px) {
         grid-template-rows: 1fr;
     }
 `;
@@ -28,7 +28,7 @@ export const ApartmentsContainer = styled.div`
         grid-template-columns: repeat(2, 1fr);
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width:  480px) {
         width: 100vw;
         grid-template-columns: 1fr;
         margin: 0;
@@ -48,7 +48,7 @@ export const FeaturedApartment = styled.div`
         transform: translate(-50%, -50%) scale(1);
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width:  480px) {
         width: 90%;
     }
 `;
@@ -70,7 +70,7 @@ export const Info = styled.p`
     font-weight: 700;
     letter-spacing: 4px;
     
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width:  480px) {
         letter-spacing: 3px;
     }
     

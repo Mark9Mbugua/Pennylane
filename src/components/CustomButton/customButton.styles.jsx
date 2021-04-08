@@ -30,7 +30,7 @@ export const CustomButtonContainer = styled.button`
   justify-content: center;
   ${getButtonStyles}
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width:  480px) {
     min-width: 90px;
     font-size: 12px;
     height: 40px;
