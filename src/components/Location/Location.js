@@ -59,7 +59,7 @@ const Location = () => {
                             width="100%" 
                             height="500" 
                             id="gmap_canvas" 
-                            src="https://maps.google.com/maps?q=pennylane&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                            src="https://maps.google.com/maps?q=Pennylane%20banana&t=&z=13&ie=UTF8&iwloc=&output=embed" 
                             frameBorder="0" 
                             scrolling="no" 
                             marginHeight="0" 
