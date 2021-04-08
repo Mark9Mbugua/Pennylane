@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HomeSection = styled.section`
-    min-height: 90vh;
+    height: 100vh;
     display: grid;
     background: #74706D;
     background-position: center;
@@ -13,23 +13,9 @@ export const HomeSection = styled.section`
         content: '';
         background: black;
         width: 100%;
-        height: 90vh;
+        height: 100%;
         position: absolute;
         opacity: 0.3;
-    }
-
-    @media screen and (max-width: 1024px) {
-        min-height: 90vh;
-        .hero::after{
-            height: 90vh;
-        } 
-    }
-
-    @media screen and (max-width: 768px) {
-        min-height: 80vh;
-        .hero::after{
-            height: 80vh;
-        } 
     }
 `;
 
@@ -39,18 +25,15 @@ export const Hero = styled.div`
     align-items: center;
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 100%;
+    overflow-y: hidden;
     img {
         width: 100%;
-        height: 100%;
+        height: 100vh;
         object-fit: cover;    
     }
 
-    @media screen and (max-width: 1024px) {
-        min-height: 60vh; 
-    }
-
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 480px) {
         min-height: 60vh;
     }
 `;
@@ -65,13 +48,34 @@ export const Intro = styled.div`
     opacity: 0.9;
     z-index: 3;
 
-    @media screen and (max-width: 1024px) {
-        height: 45%;
-        text-align: center; 
+    @media only screen 
+    and (min-width: 1280px) 
+    and (max-width: 1280px)
+    and (min-height: 1024px) 
+    and (max-height: 1024px){
+        width: 80%;
+        height: 35%;
     }
 
-    @media screen and (max-width: 768px) {
-        height: 40%;
+    @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px)
+    and (orientation: portrait) 
+    and (-webkit-min-device-pixel-ratio: 1.5) {
+        width: 90%;
+        height: 25%;
+    }
+
+    @media screen 
+    and (min-width: 480px)
+    and (max-width: 768px) {
+        width: 90%;
+        height: 25%;
+    }
+
+    @media screen and (max-width: 480px) {
+        height: 20%;
+        width: 90%;
         text-align: center;
     }
 `;
@@ -82,14 +86,34 @@ export const IntroTitle = styled.h1`
     padding: 10px 30px;
     z-index: 4;
 
-    @media screen and (max-width: 1024px) {
-        padding: 5px 40px;
-        font-size: 6vh;
+    @media only screen 
+    and (min-width: 1280px) 
+    and (max-width: 1280px)
+    and (min-height: 1024px) 
+    and (max-height: 1024px){
+        font-size: 8vh;
+        padding: 8px 20px;
     }
 
-    @media screen and (max-width: 768px) {
-        font-size: 5vh;
-        padding: 5px 50px;
+    @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px)
+    and (orientation: portrait) 
+    and (-webkit-min-device-pixel-ratio: 1.5) {
+        font-size: 5.5vh;
+        padding: 5px 10px;
+    }
+
+    @media screen 
+    and (min-width: 480px)
+    and (max-width: 768px) {
+        font-size: 5.5vh;
+        padding: 5px 10px;
+    }
+
+    @media screen and (max-width:  480px) {
+        font-size: 4vh;
+        padding: 5px 10px;
     }
 `;
 
@@ -98,13 +122,8 @@ export const WhiteLine = styled.div`
     width: 40vh;
     height: 10px;
     margin-bottom: 20px;
-    
-    @media screen and (max-width: 1024px) {
-        width: 25vh;
-        height: 8px;
-    }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width:  480px) {
         width: 25vh;
         height: 7px;
     }      

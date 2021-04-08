@@ -8,6 +8,18 @@ export const Nav = styled.nav`
     min-height: 8vh;
     background: #74706D;
     align-items: center;
+
+    @media screen 
+    and (min-width: 480px)
+    and (max-width: 768px) {
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    @media screen and (max-width: 480px) {
+        justify-content: space-between;
+        padding: 0 5px;
+    } 
 `;
 
 export const Logo = styled.div`
@@ -16,13 +28,16 @@ export const Logo = styled.div`
     letter-spacing: 4px;
     font-size: 18px;
 
-    @media screen and (max-width: 1024px) {
-        letter-spacing: 3px;
-    }
-
-    @media screen and (max-width: 768px) {
+    @media screen 
+    and (min-width: 480px)
+    and (max-width: 768px) {
         letter-spacing: 3px;
         font-size: 16px;
+    }
+
+    @media screen and (max-width: 480px) {
+        letter-spacing: 2px;
+        font-size: 14px;
     }            
 `;
 
@@ -35,7 +50,7 @@ export const NavLinks = styled.ul`
         width: 50%;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width:  768px) {
         position: absolute;
         right: 0px;
         height: 92vh;
@@ -63,6 +78,10 @@ export const NavLink = styled(Link)`
     &:hover {
         background: #fff;
         color: #74706D;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 13px;
     }
 `;
 
@@ -98,7 +117,7 @@ export const Burger = styled.div`
     display: none;
     cursor: pointer;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width:  768px) {
        display: block;
        div {
             width: 25px;
