@@ -10,14 +10,62 @@ export const SliderContainer = styled.div`
     overflow: hidden; 
     justify-self: center;
 
-    @media screen and (max-width: 1024px) {
-        width: 95%;
-        height: 70vh;
+    @media only screen 
+    and (min-width: 1280px) 
+    and (max-width: 1280px)
+    and (min-height: 1024px) 
+    and (max-height: 1024px) {
+        width: 80%;
+        height: 80vh;
     }
 
-    @media screen and (max-width:  480px) {
-        width: 100%;
-        height: 70vh;
+    @media only screen 
+    and (min-width: 1280px) 
+    and (max-width: 1280px)
+    and (min-height: 768px) 
+    and (max-height: 950px) {
+        width: 70%;
+        height: 90vh;
+    }
+
+    @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px)
+    and (orientation: landscape)
+    and (-webkit-min-device-pixel-ratio: 1.5) {
+        width: 70%;
+        height: 75vh;
+    }
+
+    @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px)
+    and (orientation: portrait)
+    and (-webkit-min-device-pixel-ratio: 1.5) {
+        width: 80%;
+        height: 60vh;
+    }
+    
+
+    @media screen 
+    and (min-width: 768px)
+    and (max-width: 1024px)
+    and (min-height: 768px)
+    and (max-height: 768px) {
+        width: 75%;
+        height: 85vh;
+    }
+
+    @media screen 
+    and (min-width: 480px)
+    and (max-width: 768px) {
+        width: 85%;
+        height: 65vh;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 90%;
+        height: 60vh;
     }  
 `;
 

@@ -1,17 +1,19 @@
 import React from 'react';
+
+import { NoLinksNav } from './noLinksNavbar.styles';
+
 import { 
-    Nav,
     Logo,
     LogoLink
 } from './mainNavbar.styles';
 
 const NoLinksNavbar = () => {
     return (
-        <Nav>
+        <NoLinksNav>
             <Logo>
                 <LogoLink to='/'>Pennylane Apartments</LogoLink>
             </Logo>  
-        </Nav>
+        </NoLinksNav>
     )
 }
 
