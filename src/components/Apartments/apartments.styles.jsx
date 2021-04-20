@@ -7,6 +7,12 @@ export const ApartmentsSection = styled.section`
     grid-template-rows: 25% 1fr;
 
     @media only screen 
+    and (min-width: 1440px) 
+    and (max-width: 1440px) {
+        height: 160vh; 
+    }
+
+    @media only screen 
     and (min-width: 1024px) 
     and (max-height: 1366px)
     and (orientation: landscape) 
@@ -54,6 +60,13 @@ export const ApartmentsContainer = styled.div`
     grid-gap: 40px;
 
     @media only screen 
+    and (min-width: 1440px) 
+    and (max-width: 1440px) {
+        width: 90vw;
+        grid-gap: 20px;  
+    }
+
+    @media only screen 
     and (min-width: 1024px) 
     and (max-height: 1366px)
     and (-webkit-min-device-pixel-ratio: 1.5) {
@@ -99,6 +112,12 @@ export const FeaturedApartment = styled.div`
     }
     .img-container:hover .house-link {
         transform: translate(-50%, -50%) scale(1);
+    }
+
+    @media only screen 
+    and (min-width: 1440px) 
+    and (max-width: 1440px) {
+        margin: 0 10px;
     }
 
     @media only screen 
